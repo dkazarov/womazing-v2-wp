@@ -44,16 +44,16 @@ Template Name: Home
       <div class="hero-slider__right">
         <div class="swiper-wrapper">
           <div class="swiper-slide hero-slide__inner">
-            <picture><source srcset="./assets/hero-main-person-01.webp" type="image/webp"><img class="hero__img" src="./assets/hero-main-person-01.jpg" alt="slider image woman"></picture>
+            <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-01.webp" type="image/webp"><img class="hero__img" src="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-01.jpg" alt="slider image woman"></picture>
           </div>
           <div class="swiper-slide">
-            <picture><source srcset="./assets/hero-main-person-02.webp" type="image/webp"><img class="hero__img" src="./assets/hero-main-person-02.jpg" alt="slider image woman"></picture>
+            <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-02.webp" type="image/webp"><img class="hero__img" src="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-02.jpg" alt="slider image woman"></picture>
           </div>
           <div class="swiper-slide">
-            <picture><source srcset="./assets/hero-main-person-03.webp" type="image/webp"><img class="hero__img" src="./assets/hero-main-person-03.jpg" alt="slider image woman"></picture>
+            <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-03.webp" type="image/webp"><img class="hero__img" src="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-03.jpg" alt="slider image woman"></picture>
           </div>
         </div>
-        <picture><source srcset="./assets/hero-bottom-person.webp" type="image/webp"><img class="hero__img--bottom" src="./assets/hero-bottom-person.jpg" alt=""></picture>
+        <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/hero-bottom-person.webp" type="image/webp"><img class="hero__img--bottom" src="<?php bloginfo('template_url'); ?>/assets/img/hero-bottom-person.jpg" alt=""></picture>
       </div>
 
     </div>
@@ -70,7 +70,7 @@ Template Name: Home
       <article class="card">
         <a class="card__inner" href="#">
           <div class="card-img__inner">
-            <picture><source srcset="./assets/new-coll-01.webp" type="image/webp"><img class="card__img" src="./assets/new-coll-01.jpg" alt="girl"></picture>
+            <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/new-coll-01.webp" type="image/webp"><img class="card__img" src="<?php bloginfo('template_url'); ?>/assets/img/new-coll-01.jpg" alt="girl"></picture>
           </div>
           <h4 class="card__title title--second">Футболка USA</h4>
           <p class="card__price"><span class="card__price--old">$229</span>$129</p>
@@ -79,7 +79,7 @@ Template Name: Home
       <article class=" card">
         <a class="card__inner" href="#">
           <div class="card-img__inner">
-            <picture><source srcset="./assets/new-coll-02.webp" type="image/webp"><img class="card__img" src="./assets/new-coll-02.jpg" alt="girl"></picture>
+            <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/new-coll-02.webp" type="image/webp"><img class="card__img" src="<?php bloginfo('template_url'); ?>/assets/img/new-coll-02.jpg" alt="girl"></picture>
           </div>
           <h4 class="card__title title--second">Купальник Glow</h4>
           <p class="card__price"><span></span>$129</p>
@@ -88,7 +88,7 @@ Template Name: Home
       <article class="card">
         <a class="card__inner" href="#">
           <div class="card-img__inner">
-            <picture><source srcset="./assets/new-coll-03.webp" type="image/webp"><img class="card__img" src="./assets/new-coll-03.jpg" alt="girl"></picture>
+            <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/new-coll-03.webp" type="image/webp"><img class="card__img" src="<?php bloginfo('template_url'); ?>/assets/img/new-coll-03.jpg" alt="girl"></picture>
           </div>
           <h4 class="card__title title--second">Свитшот Sweet Shot</h4>
           <p class="card__price"><span></span>$129</p>
@@ -109,21 +109,21 @@ Template Name: Home
 
     <div class="important__inner">
       <article class="important__card">
-        <picture><source srcset="./assets/grant.svg" type="image/webp"><img class="important__img" src="./assets/grant.svg" alt="grant-icon"></picture>
+        <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/grant.svg" type="image/webp"><img class="important__img" src="<?php bloginfo('template_url'); ?>/assets/img/grant.svg" alt="grant-icon"></picture>
         <h4 class="important-card__title title--middle">Качество</h4>
         <p class="important__text">
           Наши профессионалы работают на лучшем оборудовании для пошива одежды беспрецедентного качества
         </p>
       </article>
       <article class="important__card">
-        <picture><source srcset="./assets/settings.svg" type="image/webp"><img class="important__img" src="./assets/settings.svg" alt="settings-icon"></picture>
+        <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/settings.svg" type="image/webp"><img class="important__img" src="<?php bloginfo('template_url'); ?>/assets/img/settings.svg" alt="settings-icon"></picture>
         <h4 class="important-card__title title--middle">Скорость</h4>
         <p class="important__text">
           Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц продукции в наших собственных цехах
         </p>
       </article>
       <article class="important__card">
-        <picture><source srcset="./assets/hand.svg" type="image/webp"><img class="important__img" src="./assets/hand.svg" alt="hand-icon"></picture>
+        <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/hand.svg" type="image/webp"><img class="important__img" src="<?php bloginfo('template_url'); ?>/assets/img/hand.svg" alt="hand-icon"></picture>
         <h4 class="important-card__title title--middle">Ответственность</h4>
         <p class="important__text">
           Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing
@@ -142,17 +142,17 @@ Template Name: Home
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="team__slider-img-inner">
-              <picture><source srcset="./assets/team_01.webp" type="image/webp"><img class="team__slider-img" src="./assets/team_01.jpg" alt="womans cut"></picture>
+              <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/team_01.webp" type="image/webp"><img class="team__slider-img" src="<?php bloginfo('template_url'); ?>/assets/img/team_01.jpg" alt="womans cut"></picture>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="team__slider-img-inner">
-              <picture><source srcset="./assets/team_02.webp" type="image/webp"><img class="team__slider-img" src="./assets/team_02.jpg" alt="womans jump"></picture>
+              <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/team_02.webp" type="image/webp"><img class="team__slider-img" src="<?php bloginfo('template_url'); ?>/assets/img/team_02.jpg" alt="womans jump"></picture>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="team__slider-img-inner">
-              <picture><source srcset="./assets/team_03.webp" type="image/webp"><img class="team__slider-img" src="./assets/team_03.jpg" alt="team"></picture>
+              <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/team_03.webp" type="image/webp"><img class="team__slider-img" src="<?php bloginfo('template_url'); ?>/assets/img/team_03.jpg" alt="team"></picture>
             </div>
           </div>
         </div>
@@ -168,10 +168,16 @@ Template Name: Home
         <a class="team__link-about-page" href="#">Подробнее о бренде</a>
       </div>
       <div class="team-button-prev">
-        <picture><source srcset="../assets/team-arrow-prev.svg" type="image/webp"><img class="team__arrow-prev" src="../assets/team-arrow-prev.svg" alt="arrow right"></picture>
+        <picture>
+          <source srcset="<?php bloginfo('template_url'); ?>/assets/img/team-arrow-prev.svg" type="image/webp">
+          <img class="team__arrow-prev" src=".<?php bloginfo('template_url'); ?>/assets/img/team-arrow-prev.svg" alt="arrow right">
+        </picture>
       </div>
       <div class="team-button-next">
-        <picture><source srcset="../assets/team-arrow-next.svg" type="image/webp"><img class="team__arrow-next" src="../assets/team-arrow-next.svg" alt="arrow left"></picture>
+        <picture>
+          <source srcset="<?php bloginfo('template_url'); ?>/assets/img/team-arrow-next.svg" type="image/webp">
+          <img class="team__arrow-next" src=".<?php bloginfo('template_url'); ?>/assets/img/team-arrow-next.svg" alt="arrow left">
+        </picture>
       </div>
     </div>
 

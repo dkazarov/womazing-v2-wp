@@ -4,7 +4,7 @@
   <div class="footer__inner">
     <div class="container">
       <div class="footer__top">
-        <picture><source srcset="./assets/logo.svg" type="image/webp"><img class="logo footer__logo" src="./assets/logo.svg" alt="womazing logo"></picture>
+        <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" type="image/webp"><img class="logo footer__logo" src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" alt="womazing logo"></picture>
 
         <nav class="footer__nav">
           <ul class="footer__list">
@@ -57,18 +57,18 @@
           <ul class="social-items">
             <li class="social-item">
               <a class="social-link" href="#">
-                <picture><source srcset="./assets/instagram.svg" type="image/webp"><img class="social-icon" src="./assets/instagram.svg" alt="instagram icon"></picture>
+                <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/instagram.svg" type="image/webp"><img class="social-icon" src="<?php bloginfo('template_url'); ?>/assets/img/instagram.svg" alt="instagram icon"></picture>
               </a>
               <a class="social-link" href="#">
-                <picture><source srcset="./assets/FB.svg" type="image/webp"><img class="social-icon" src="./assets/FB.svg" alt="fb icon"></picture>
+                <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/FB.svg" type="image/webp"><img class="social-icon" src="<?php bloginfo('template_url'); ?>/assets/img/FB.svg" alt="fb icon"></picture>
               </a>
               <a class="social-link" href="#">
-                <picture><source srcset="./assets/twitter.svg" type="image/webp"><img class="social-icon" src="./assets/twitter.svg" alt="twitter icon"></picture>
+                <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/twitter.svg" type="image/webp"><img class="social-icon" src="<?php bloginfo('template_url'); ?>/assets/img/twitter.svg" alt="twitter icon"></picture>
               </a>
             </li>
             <div class="visa">
               <a class="visa__link" href="#">
-                <picture><source srcset="./assets/visa-mastercard.svg" type="image/webp"><img class="visa__img" src="./assets/visa-mastercard.svg" alt="visa"></picture>
+                <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/visa-mastercard.svg" type="image/webp"><img class="visa__img" src="<?php bloginfo('template_url'); ?>/assets/img/visa-mastercard.svg" alt="visa"></picture>
               </a>
             </div>
           </ul>
