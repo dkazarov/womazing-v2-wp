@@ -18,7 +18,9 @@
     <div class="header__inner">
       <button class="burger btn--reset">    <span class="burger__line"></span></button>
 
-      <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" type="image/webp"><img class="logo" src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" alt="womazing logo"></picture>
+      <picture>
+        <img class="logo" src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" alt="womazing logo">
+      </picture>
 
       <nav class="nav header__nav">
         <ul class="nav__list">

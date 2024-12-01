@@ -107,33 +107,43 @@ Template Name: Home
             </p>
           </a>
         </article>
-        <!-- <article class=" card">
-          <a class="card__inner" href="#">
-            <div class="card-img__inner">
-              <picture>
-                <img class="card__img" src="<?php bloginfo('template_url'); ?>/assets/img/new-coll-02.jpg" alt="girl">
-              </picture>
-            </div>
-            <h4 class="card__title title--second">Купальник Glow</h4>
-            <p class="card__price"><span></span>$129</p>
-          </a>
-        </article> -->
+
         <article class="card">
           <a class="card__inner" href="#">
             <div class="card-img__inner">
               <picture>
-                <img class="card__img" src="<?php bloginfo('template_url'); ?>/assets/img/new-coll-03.jpg" alt="girl">
+                <img class="card__img" src="<?php the_field('new-coll-card-02-img', 13); ?>">
               </picture>
             </div>
-            <h4 class="card__title title--second">Свитшот Sweet Shot</h4>
-            <p class="card__price"><span></span>$129</p>
+              <h4 class="card__title title--second"><?php the_field('new-coll-card-02-title', 13); ?></h4>
+            <p class="card__price">
+              <span class="card__price--old"><?php the_field('new-coll-card-02-full-price', 13); ?></span>
+              <?php the_field('new-coll-card-02-sale-price', 13); ?>
+            </p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__inner" href="#">
+            <div class="card-img__inner">
+              <picture>
+                <img class="card__img" src="<?php the_field('new-coll-card-03-img', 13); ?>">
+              </picture>
+            </div>
+              <h4 class="card__title title--second"><?php the_field('new-coll-card-03-title', 13); ?></h4>
+            <p class="card__price">
+              <span class="card__price--old">
+                <?php the_field('new-coll-card-03-full-price', 13); ?>
+              </span>
+              <?php the_field('new-coll-card-03-sale-price', 13); ?>
+            </p>
           </a>
         </article>
 
       </div>
       <!--Btn-->
       <div class="new-coll__btn-inner">
-        <a class="new-coll__btn btn--transparent" href="#">Открыть магазин</a>
+        <a class="new-coll__btn btn--transparent" href="#"><?php the_field('new-coll-btn-text', 13); ?></a>
       </div>
     </div>
   </section>
