@@ -824,6 +824,8 @@ button.swiper-pagination-bullet {
 
 .footer__phone {
 	margin-bottom: 5px;
+	font-weight: 400;
+	font-size: 15px;
 }
 
 .footer__phone::before {

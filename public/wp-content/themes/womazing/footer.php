@@ -26,7 +26,10 @@
         </nav>
 
         <div class="action footer__action">
-          <a class="action__phone footer__phone" href="tel:000000">+7 (495) 823-54-12</a>
+          <a class="footer__phone" href="tel:000000">
+            <!-- Phone -->
+            <?php the_field('phone', 13); ?>
+          </a>
           <a class="footer__mail" href="mailto:">hello@womazing.com</a>
         </div>
       </div>

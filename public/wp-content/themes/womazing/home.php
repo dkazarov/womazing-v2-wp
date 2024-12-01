@@ -88,7 +88,7 @@ Template Name: Home
 
   <section id="new-collection" class="new-coll">
     <div class="container">
-
+                            <?php the_field('phone'); ?>
       <h2 class="new-coll-main__title title--main">Новая коллекция</h2>
 
       <div class="new-coll__inner">
