@@ -38,8 +38,17 @@
       </nav>
 
       <div class="action">
-        <a class="action__phone" href="tel:000000">+7 (495) 823-54-12</a>
-        <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/cart.svg" type="image/webp"><img class="cart" src="<?php bloginfo('template_url'); ?>/assets/img/cart.svg" alt="cart"></picture>
+        <a class="action__phone" href="tel:000000">
+          <picture>
+            <img class="action__phone-icon" src="<?php bloginfo('template_url'); ?>/assets/img/phone.svg" alt="phone icon">
+          </picture>
+          <picture>
+            <img class="action__phone-icon--active" src="<?php bloginfo('template_url'); ?>/assets/img/active-phone.svg" alt="phone icon">
+          </picture>
+          +7 (495) 823-54-12
+        </a>
+        <picture>
+          <img class="cart" src="<?php bloginfo('template_url'); ?>/assets/img/cart.svg" alt="cart"></picture>
       </div>
 
     </div>
