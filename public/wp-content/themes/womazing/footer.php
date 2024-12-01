@@ -4,7 +4,9 @@
   <div class="footer__inner">
     <div class="container">
       <div class="footer__top">
-        <picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" type="image/webp"><img class="logo footer__logo" src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" alt="womazing logo"></picture>
+        <picture>
+          <?php the_custom_logo(); ?>
+        </picture>
 
         <nav class="footer__nav">
           <ul class="footer__list">

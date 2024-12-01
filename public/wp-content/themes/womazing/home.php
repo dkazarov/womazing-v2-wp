@@ -41,7 +41,7 @@ Template Name: Home
             <div class="hero__btn">
               <a class="hero__btn--arrow" href="#new-collection">
                 <picture>
-                  <img class="hero__btn--arrow-img" src="<?php bloginfo('template_url'); ?>/assets/img/hero-btn-arrow.svg" alt="arrow down" width="24" height="40">
+                  <img class="hero__btn--arrow-img" src="<?php bloginfo('template_url'); ?>/assets/img/hero-btn-arrow.svg" alt="arrow down">
                 </picture>
               </a>
               <a class="hero__btn-link btn--full" href="#">Открыть магазин</a>
