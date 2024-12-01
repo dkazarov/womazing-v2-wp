@@ -1099,11 +1099,10 @@ a {
 
 .hero__btn--arrow-img {
 	position: absolute !important;
-	top: 20px;
-	left: 25px;
-	width: 14px;
-	height: 28px;
-	z-index: 1000 !important;
+	top: 0px;
+	left: 0px;
+	width: 67px;
+	height: 67px;
 }
 
 .hero-slider__right {
