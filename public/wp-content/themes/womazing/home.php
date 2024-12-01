@@ -28,10 +28,12 @@ Template Name: Home
                 foreach( $myposts as $post ){
                   setup_postdata( $post );
                   ?>
-                            <div class="swiper-slide">
-                              <h1 class="hero__title"><?php the_title(); ?></h1>
-                                <?php the_content() ?>
-                            </div>
+                    <div class="swiper-slide">
+                      <h1 class="hero__title"><?php the_title(); ?></h1>
+                        <?php the_content(
+                          
+                        ) ?>
+                      </div>
                   <?php	}} wp_reset_postdata(); ?>
 
             </div>

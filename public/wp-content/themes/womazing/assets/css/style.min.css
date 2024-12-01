@@ -1067,7 +1067,7 @@ a {
     margin-bottom: 45px
 }
 
-.hero__text {
+.hero__inner p {
     font-weight: 400;
     font-size: 20px;
     text-align: right;
