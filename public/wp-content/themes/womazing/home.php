@@ -38,17 +38,21 @@ Template Name: Home
 
             </div>
           </div>
-          <div class="hero__btn">
-            <a class="hero__btn--arrow" href="#new-collection"></a>
-            <a class="hero__btn-link btn--full" href="#">Открыть магазин</a>
-          </div>
+            <div class="hero__btn">
+              <a class="hero__btn--arrow" href="#new-collection">
+                <picture>
+                  <img class="hero__btn--arrow-img" src="<?php bloginfo('template_url'); ?>/assets/img/hero-btn-arrow.svg" alt="arrow down">
+                </picture>
+              </a>
+              <a class="hero__btn-link btn--full" href="#">Открыть магазин</a>
+            </div>
           <div class="hero__pagination"></div>
         </div>
 
         <div class="hero-slider__right">
           <div class="swiper-wrapper">
 
-                                <?php
+              <?php
               global $post;
 
               $myposts = get_posts([
