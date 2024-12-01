@@ -15,19 +15,24 @@ Template Name: Home
           <div class="hero-slider__left">
             <div class="swiper-wrapper hero-slide">
 
-            <?php while ( have_posts() ){ the_post(); ?>
-              <div class="swiper-slide">
-                <h1 class="hero__title"><?php the_title(); ?></h1>
-                  <?php the_content() ?>
-              </div>
-<?php } ?>
-<?php if ( ! have_posts() ){ ?>
-	Записей нет.
-<?php } ?>
+              <?php
+              global $post;
 
+              $myposts = get_posts([
+                // 'numberposts' => 5,
+                // 'offset'      => 1,
+                'category'    => 3
+              ]);
 
-
-
+              if( $myposts ){
+                foreach( $myposts as $post ){
+                  setup_postdata( $post );
+                  ?>
+                            <div class="swiper-slide">
+                              <h1 class="hero__title"><?php the_title(); ?></h1>
+                                <?php the_content() ?>
+                            </div>
+                  <?php	}} wp_reset_postdata(); ?>
 
             </div>
           </div>
