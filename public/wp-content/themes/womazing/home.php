@@ -62,7 +62,7 @@ Template Name: Home
                   <div class="swiper-slide hero-slide__inner">
                     <picture>
                       <?php the_post_thumbnail(
-                        array(1380,920),
+                        array(410,646),
                         array('class' => 'hero__img'),
                         ); ?>
                     </picture>
