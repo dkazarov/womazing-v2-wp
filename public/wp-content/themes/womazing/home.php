@@ -88,8 +88,8 @@ Template Name: Home
 
   <section id="new-collection" class="new-coll">
     <div class="container">
-                            <?php the_field('phone'); ?>
-      <h2 class="new-coll-main__title title--main">Новая коллекция</h2>
+        <?php the_field('phone'); ?>
+      <h2 class="new-coll-main__title title--main"><?php the_field('new-coll-main-title', 13); ?></h2>
 
       <div class="new-coll__inner">
 
@@ -97,32 +97,32 @@ Template Name: Home
           <a class="card__inner" href="#">
             <div class="card-img__inner">
               <picture>
-                <source srcset="<?php bloginfo('template_url'); ?>/assets/img/new-coll-01.webp" type="image/webp"><img
-                  class="card__img" src="<?php bloginfo('template_url'); ?>/assets/img/new-coll-01.jpg" alt="girl">
+                <img class="card__img" src="<?php the_field('new-coll-card-01-img', 13); ?>">
               </picture>
             </div>
-            <h4 class="card__title title--second">Футболка USA</h4>
-            <p class="card__price"><span class="card__price--old">$229</span>$129</p>
+              <h4 class="card__title title--second"><?php the_field('new-coll-card-01-title', 13); ?></h4>
+            <p class="card__price">
+              <span class="card__price--old"><?php the_field('new-coll-card-01-full-price', 13); ?></span>
+              <?php the_field('new-coll-card-01-sale-price', 13); ?>
+            </p>
           </a>
         </article>
-        <article class=" card">
+        <!-- <article class=" card">
           <a class="card__inner" href="#">
             <div class="card-img__inner">
               <picture>
-                <source srcset="<?php bloginfo('template_url'); ?>/assets/img/new-coll-02.webp" type="image/webp"><img
-                  class="card__img" src="<?php bloginfo('template_url'); ?>/assets/img/new-coll-02.jpg" alt="girl">
+                <img class="card__img" src="<?php bloginfo('template_url'); ?>/assets/img/new-coll-02.jpg" alt="girl">
               </picture>
             </div>
             <h4 class="card__title title--second">Купальник Glow</h4>
             <p class="card__price"><span></span>$129</p>
           </a>
-        </article>
+        </article> -->
         <article class="card">
           <a class="card__inner" href="#">
             <div class="card-img__inner">
               <picture>
-                <source srcset="<?php bloginfo('template_url'); ?>/assets/img/new-coll-03.webp" type="image/webp"><img
-                  class="card__img" src="<?php bloginfo('template_url'); ?>/assets/img/new-coll-03.jpg" alt="girl">
+                <img class="card__img" src="<?php bloginfo('template_url'); ?>/assets/img/new-coll-03.jpg" alt="girl">
               </picture>
             </div>
             <h4 class="card__title title--second">Свитшот Sweet Shot</h4>
