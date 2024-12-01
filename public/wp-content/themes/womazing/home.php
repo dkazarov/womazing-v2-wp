@@ -45,27 +45,30 @@ Template Name: Home
 
         <div class="hero-slider__right">
           <div class="swiper-wrapper">
-            <div class="swiper-slide hero-slide__inner">
-              <picture>
-                <source srcset="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-01.webp"
-                  type="image/webp"><img class="hero__img"
-                  src="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-01.jpg" alt="slider image woman">
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture>
-                <source srcset="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-02.webp"
-                  type="image/webp"><img class="hero__img"
-                  src="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-02.jpg" alt="slider image woman">
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture>
-                <source srcset="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-03.webp"
-                  type="image/webp"><img class="hero__img"
-                  src="<?php bloginfo('template_url'); ?>/assets/img/hero-main-person-03.jpg" alt="slider image woman">
-              </picture>
-            </div>
+
+                                <?php
+              global $post;
+
+              $myposts = get_posts([
+                // 'numberposts' => 5,
+                // 'offset'      => 1,
+                'category'    => 4
+              ]);
+
+              if( $myposts ){
+                foreach( $myposts as $post ){
+                  setup_postdata( $post );
+                  ?>
+                  <div class="swiper-slide hero-slide__inner">
+                    <picture>
+                      <?php the_post_thumbnail(
+                        array(1380,920),
+                        array('class' => 'hero__img'),
+                        ); ?>
+                    </picture>
+                  </div>
+                  <?php	}} wp_reset_postdata(); ?>
+
           </div>
           <picture>
             <source srcset="<?php bloginfo('template_url'); ?>/assets/img/hero-bottom-person.webp" type="image/webp">
