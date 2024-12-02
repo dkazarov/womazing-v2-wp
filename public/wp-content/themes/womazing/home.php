@@ -150,41 +150,34 @@ Template Name: Home
   <section class="important">
     <div class="container">
 
-      <h2 class="important__title title--main">Что для нас важно</h2>
+      <h2 class="important__title title--main"><?php the_field('important_title',13)?></h2>
 
       <div class="important__inner">
-        <article class="important__card">
-          <picture>
-            <source srcset="<?php bloginfo('template_url'); ?>/assets/img/grant.svg" type="image/webp"><img
-              class="important__img" src="<?php bloginfo('template_url'); ?>/assets/img/grant.svg" alt="grant-icon">
-          </picture>
-          <h4 class="important-card__title title--middle">Качество</h4>
-          <p class="important__text">
-            Наши профессионалы работают на лучшем оборудовании для пошива одежды беспрецедентного качества
-          </p>
-        </article>
-        <article class="important__card">
-          <picture>
-            <source srcset="<?php bloginfo('template_url'); ?>/assets/img/settings.svg" type="image/webp"><img
-              class="important__img" src="<?php bloginfo('template_url'); ?>/assets/img/settings.svg"
-              alt="settings-icon">
-          </picture>
-          <h4 class="important-card__title title--middle">Скорость</h4>
-          <p class="important__text">
-            Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц продукции в наших собственных
-            цехах
-          </p>
-        </article>
-        <article class="important__card">
-          <picture>
-            <source srcset="<?php bloginfo('template_url'); ?>/assets/img/hand.svg" type="image/webp"><img
-              class="important__img" src="<?php bloginfo('template_url'); ?>/assets/img/hand.svg" alt="hand-icon">
-          </picture>
-          <h4 class="important-card__title title--middle">Ответственность</h4>
-          <p class="important__text">
-            Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing
-          </p>
-        </article>
+        
+        <?php
+global $post;
+
+$myposts = get_posts([
+  // 'numberposts' => 3,
+	// 'offset'      => 1,
+	'category'    => 8
+]);
+
+if( $myposts ){
+  foreach( $myposts as $post ){
+    setup_postdata( $post );
+		?>
+      <article class="important__card">
+            <?php the_post_thumbnail(61,61, array(
+               'class' => "important__img",
+            )); ?>
+         <h4 class="important-card__title title--middle"><?php the_title(); ?></h4>
+         <p class="important__text">
+            <?php the_content(); ?>
+         </p>
+       </article>
+     <?php
+	}} wp_reset_postdata(); ?>
 
       </div>
     </div>

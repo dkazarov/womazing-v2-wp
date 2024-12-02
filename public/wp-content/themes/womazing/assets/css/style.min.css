@@ -1165,11 +1165,11 @@ a {
 }
 
 .important__card {
-	margin-bottom: 20px;
 	width: 350px;
+	margin-bottom: 20px;
 }
 
-.important__img {
+.important__card img {
 	margin-bottom: 40px;
 	line-height: 0.021em;
 }
@@ -1759,7 +1759,7 @@ template {
 		margin-bottom: 60px;
 	}
 
-	.important__img {
+	.important__inner img {
 		margin: 0 auto 30px;
 	}
 
