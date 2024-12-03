@@ -219,12 +219,10 @@ if( $myposts ){
         </div>
 
         <div class="team__content">
-          <h4 class="team__content-title title--middle">Для каждой</h4>
-          <p class="team__content-text">
-            <span>Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей</span>
-
-            Womazing ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают достоинства каждой девушки.
-          </p>
+          <h4 class="team__content-title title--middle"><?php the_field('team_second_title',13) ?></h4>
+          <!-- <p class="team__content-text"> -->
+            <?php the_field('team_content', 13); ?>
+          <!-- </p> -->
           <a class="team__link-about-page" href="#">Подробнее о бренде</a>
         </div>
         <div class="team-button-prev">
