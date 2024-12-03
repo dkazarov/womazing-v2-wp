@@ -147,7 +147,7 @@ Template Name: Home
       </div>
     </div>
   </section>
-  
+
   <section class="important">
     <div class="container">
 
@@ -190,32 +190,31 @@ if( $myposts ){
       <div class="team__inner">
         <div class="team__slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="team__slider-img-inner">
-                <picture>
-                  <source srcset="<?php bloginfo('template_url'); ?>/assets/img/team_01.webp" type="image/webp"><img
-                    class="team__slider-img" src="<?php bloginfo('template_url'); ?>/assets/img/team_01.jpg"
-                    alt="womans cut">
-                </picture>
+
+            <?php
+            global $post;
+
+            $myposts = get_posts([
+              'numberposts' => 3,
+              // 'offset'      => 1,
+              'category'    => 10
+            ]);
+
+            if( $myposts ){
+              foreach( $myposts as $post ){
+                setup_postdata( $post );
+                ?>
+              <div class="swiper-slide">
+                <div class="team__slider-img-inner">
+                  <picture>
+                      <?php the_post_thumbnail() ?>
+                  </picture>
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="team__slider-img-inner">
-                <picture>
-                  <source srcset="<?php bloginfo('template_url'); ?>/assets/img/team_02.webp" type="image/webp"><img
-                    class="team__slider-img" src="<?php bloginfo('template_url'); ?>/assets/img/team_02.jpg"
-                    alt="womans jump">
-                </picture>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="team__slider-img-inner">
-                <picture>
-                  <source srcset="<?php bloginfo('template_url'); ?>/assets/img/team_03.webp" type="image/webp"><img
-                    class="team__slider-img" src="<?php bloginfo('template_url'); ?>/assets/img/team_03.jpg" alt="team">
-                </picture>
-              </div>
-            </div>
+                <?php
+              }
+            } else { } wp_reset_postdata(); ?>
+
           </div>
         </div>
 
