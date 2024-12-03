@@ -1890,6 +1890,15 @@ template {
 		max-width: 100%;
 	}
 
+	.team__content p span {
+		display: block;
+		text-align: center;
+	}
+	.team__content p + p {
+		display: block;
+		text-align: center;
+	}
+
 	.team__content-title.title--middle {
 		font-size: 40px;
 		width: 100%;

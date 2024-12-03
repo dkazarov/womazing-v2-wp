@@ -219,11 +219,12 @@ if( $myposts ){
         </div>
 
         <div class="team__content">
-          <h4 class="team__content-title title--middle"><?php the_field('team_second_title',13) ?></h4>
+          <h4 class="team__content-title title--middle">
+            <?php the_field('team_second_title',13) ?></h4>
           <!-- <p class="team__content-text"> -->
             <?php the_field('team_content', 13); ?>
           <!-- </p> -->
-          <a class="team__link-about-page" href="#">Подробнее о бренде</a>
+          <a class="team__link-about-page" href="#"><?php the_field('team_content-url', 13); ?></a>
         </div>
         <div class="team-button-prev">
           <picture>
