@@ -147,6 +147,7 @@ Template Name: Home
       </div>
     </div>
   </section>
+  
   <section class="important">
     <div class="container">
 
@@ -184,7 +185,7 @@ if( $myposts ){
   </section>
   <div class="team">
     <div class="container">
-      <div class="team__title title--main">Команда мечты Womazing</div>
+      <h4 class="team__title title--main"><?php the_field('team_main_title', 13); ?></h4>
 
       <div class="team__inner">
         <div class="team__slider">
