@@ -16,12 +16,10 @@
       <header class="header">
   <div class="container">
     <div class="header__inner">
-      <button class="burger btn--reset">    <span class="burger__line"></span></button>
-
-      <picture>
-        <img class="logo" src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" alt="womazing logo">
-      </picture>
-
+      <button class="burger btn--reset">
+        <span class="burger__line"></span>
+      </button>
+      <?php the_custom_logo(); ?>
       <nav class="nav header__nav">
         <ul class="nav__list">
           <li class="nav__item">

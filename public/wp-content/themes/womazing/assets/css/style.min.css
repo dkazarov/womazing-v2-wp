@@ -957,10 +957,8 @@ a {
 	padding: 50px 0;
 }
 
-.logo {
-	position: relative;
-	cursor: pointer;
-	z-index: 3;
+.custom-logo-link {
+	z-index: 3 !important;
 }
 
 .header__nav {
