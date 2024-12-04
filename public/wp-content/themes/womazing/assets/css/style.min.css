@@ -1887,10 +1887,10 @@ template {
 		padding-top: 5%;
 		max-width: 100%;
 	}
-
-	.team__content p span {
+ 
+	.team__content p {
 		display: block;
-		text-align: center;
+		text-align: center !important;
 	}
 	.team__content p + p {
 		display: block;
