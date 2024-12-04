@@ -39,7 +39,8 @@
       <div class="footer__bottom">
         <div class="footer__bottom-left">
           <p class="copiright">© Все права защищены</p>
-          <a class="private" href="#">Политика конфиденциальности</a>
+          <a class="private" href="<?php the_field('private_link', 13) ?>">Политика конфиденциальности</a>
+            <?php the_field('private_link') ?>
           <a class="offerta" href="#">Публичная оферта</a>
         </div>
 
