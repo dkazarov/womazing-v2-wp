@@ -1532,6 +1532,18 @@ template {
 	z-index: 100;
 }
 
+/* Page Private */
+.private {
+	padding-top: 134px;
+}
+
+@media (width < 767px) {
+.private {
+	padding-top: 80px !important;
+}
+}
+
+/* Home media */
 @media (width < 992px) {
 	.footer__inner {
 		padding: 5% 0;
