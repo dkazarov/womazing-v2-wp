@@ -27,10 +27,12 @@
 
         <div class="action footer__action">
           <a class="footer__phone" href="tel:000000">
-            <!-- Phone -->
             <?php the_field('phone', 13); ?>
           </a>
-          <a class="footer__mail" href="mailto:">hello@womazing.com</a>
+          <a class="footer__mail" href="mailto:">
+            <?php the_field('e-mail-footer', 13); ?>
+          </a>
+
         </div>
       </div>
 
